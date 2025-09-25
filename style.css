@@ -464,6 +464,10 @@ section{
 }
 
 @media(max-width:768px) {
+    
+     .home{
+        background-image: url(poyadina2.jpg);
+    }
 
 
     .home{
@@ -535,4 +539,5 @@ section{
         background-image: url(poyadina2.jpg);
     }
 }
+
 /* media querys ends */
