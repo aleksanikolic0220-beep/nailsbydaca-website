@@ -469,13 +469,6 @@ section{
         background-image: url(ph/poyadina2.jpg);
     }
 
-
-    .home{
-        background-image: url(poyadina2.jpg);
-    }
-
-
-
     #menu-btn{
         display: inline-block;
     }
@@ -541,4 +534,5 @@ section{
 }
 
 /* media querys ends */
+
 
