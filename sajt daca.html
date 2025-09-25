@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/gallery.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+     
+     
+<link rel="stylesheet" href="./sajt daca_files/gallery.css"><link rel="stylesheet" href="./sajt daca_files/index.html"></head>
+<body>      
+    <header>
+
+        <nav class="navbar section-content"> 
+            <a href="http://127.0.0.1:5500/gallery.html#" class="nav-logo">
+                <h2 class="logo">Nails by Daca</h2> 
+            </a>
+        <ul class="nav-menu">
+
+        
+            <li class="nav-item"> 
+            <a href="http://127.0.0.1:5500/index.html" class="nav-link">Home</a> 
+            </li>
+
+            <li class="nav-item"> 
+            <a href="http://127.0.0.1:5500/cenovnik.html" class="nav-link">Cenovnik</a> 
+            </li>
+
+            <li class="nav-item"> 
+            <a href="http://127.0.0.1:5500/onama.html" class="nav-link">O nama</a>
+            </li>
+
+            <li class="nav-item"> 
+            <a href="http://127.0.0.1:5500/gallery.html" class="nav-link">Gallery</a> 
+            </li>
+
+           <li class="nav-item">
+            <a href="http://127.0.0.1:5500/contact.html" class="nav-link">Contact</a> 
+            </li>
+        </ul>
+
+        <section>
+
+
+        <div class="gallery1">
+            <img src="./sajt daca_files/nokti.jpg">
+        </div>
+
+         <div class="gallery2">
+            <img src="./sajt daca_files/nokkk.jpg">
+        </div>
+         <div class="gallery3">
+            <img src="./sajt daca_files/noknok.jpg">
+        </div>
+         <div class="gallery4">
+            <img src="./sajt daca_files/nokt.jpg">
+        </div>
+         <div class="gallery6">
+            <img src="./sajt daca_files/noktii.jpg">
+        </div>
+         <div class="gallery7">
+            <img src="./sajt daca_files/nook.jpg">
+        </div>
+         <div class="gallery10">    
+            <img src="./sajt daca_files/noookkt.jpg">
+        </div>
+        
+         <div class="gallery11">    
+            <img src="./sajt daca_files/no1.jpg">
+        </div>
+         <div class="gallery12">    
+            <img src="./sajt daca_files/no2.jpg">
+        </div>
+         <div class="gallery13">    
+            <img src="./sajt daca_files/no3.jpg">
+        </div>
+
+         </section>
+         
+
+
+
+
+        </nav> 
+
+
+    </header>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

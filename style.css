@@ -1,0 +1,538 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Dancing+Script:wght@400..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Corinthia:wght@400;700&family=League+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Ms+Madi&display=swap');
+
+
+:root{
+    --main-color: #d3ad7f;
+    --black: #13131a; 
+    --bg: #010103; 
+    --border: .1rem solid rgba(255,255,255,.3); 
+}
+
+
+
+/*basics starts lol */
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+html{
+    font-size: 62.5%; 
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+
+html::-webkit-scrollbar-thumb{
+    background: #fff; 
+    border-radius: 5rem;
+}
+
+body{
+    background: rgb(48, 47, 47);
+}
+
+
+.header .logo img{
+    height: 10rem;
+}
+
+.header{
+    background: rgba(48, 47, 47, 0.274);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0; 
+    z-index: 1000;
+}
+
+
+.header .navbar a{
+    margin: 0 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    transition: .4s;
+}
+
+
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color); 
+    padding-bottom: .5rem;
+}
+
+.header .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem; 
+}
+
+.header .icons div:hover{
+    color: var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+/* basics ends here */
+
+
+
+
+/* home section starts */
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(ph/poyadina1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+    max-height: 7rem;
+}
+
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #d8c7a9;
+}
+
+
+.home .content p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-transform: none;
+    line-height: 1.8;
+    padding: 2rem 0;
+    color: #b6b0a5;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: rgb(53, 49, 49);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .1rem;
+    background: rgb(32, 32, 32);
+}
+/* home section ends */
+
+
+
+/* about section starts */
+
+section{
+    padding: 2rem 7%;
+}
+
+
+.heading{
+    text-align: center;
+    color: #faf4f4; 
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: rgb(172, 172, 163);
+    text-transform: uppercase;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);     
+    /* boja paragrafa */
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 1 1 45rem; 
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{ 
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+
+.about .row .content h3{
+    font-family: "dancing script", sans-serif;
+    font-size: 3rem;
+    color: #8A784E;
+}
+
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #c4c2c2; 
+    padding: 2rem 0; 
+    line-height: 1.8;
+    text-transform: none;
+}
+/* aboout section done */
+
+
+
+/* contact section starts */
+
+.contact .row{ 
+    display: flex;
+    background: var(--black); 
+    flex-wrap: wrap; 
+    gap: 1rem;
+}
+
+.contact .row .map{ 
+    flex:1 1 45rem; 
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.heading{
+    text-align: center;
+    color: #faf4f4; 
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: rgb(172, 172, 163);
+    text-transform: uppercase;
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    background: var(--black); 
+    flex-wrap: wrap;
+}
+
+.contact .row .image{
+    flex: 1 1 45rem; 
+}
+
+.contact .row .image img{
+    width: 100%;
+}
+
+.contact .row .content{ 
+    flex: 1 1 45rem;
+    padding: 2rem;
+    text-transform: none;
+}
+
+
+.contact .row .content h3{
+    font-family: "dancing script", sans-serif;
+    font-size: 3rem;
+    color: #8A784E;
+}
+
+
+.contact .row .content p{
+    font-size: 1.6rem;
+    color: #c4c2c2; 
+    padding: 2rem 0; 
+    line-height: 1.8;
+    text-transform: none;
+}
+
+
+
+
+/* contact section ends */
+
+
+
+
+/* cenovnik starts */ 
+
+.heading{
+    text-align: center;
+    color: #faf4f4; 
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color: rgb(172, 172, 163);
+    text-transform: uppercase;
+}
+
+.cenovnik .row{
+    display: flex;
+    align-items: center;
+    background: var(--black); 
+    flex-wrap: wrap;
+}
+
+.cenovnik .row .image{
+    flex: 1 1 45rem; 
+}
+
+.cenovnik .row .image img{
+    width: 100%;
+}
+
+.cenovnik .row .content{ 
+    flex: 1 1 45rem;
+    padding: 2rem;
+    text-transform: none;
+}
+
+
+.cenovnik .row .content h3{
+    font-family: "dancing script", sans-serif;
+    font-size: 3rem;
+    color: #8A784E;
+}
+
+
+.cenovnik .row .content p{
+    font-size: 1.6rem;
+    color: #c4c2c2; 
+    padding: 2rem 0; 
+    line-height: 1.8;
+    text-transform: none;
+}
+
+.cenovnik .row .content ul{
+    text-transform: none;
+    font-size: 1.6rem;
+    color: #c4c2c2; 
+    padding: 2rem 0; 
+    line-height: 1.8;
+}
+/* cenovnik ends */
+
+
+/* gallery starts */ 
+
+
+.gallery .box-container{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); 
+    gap: 1.5rem; 
+} 
+
+
+.gallery .box-container .box{
+    padding: 3rem; 
+    text-align: center;
+    border: var(--border); 
+    border-radius: 10rem;
+} 
+
+
+
+.gallery .box-container .box img{
+    height: 19rem;
+    border-radius: 8rem;
+} 
+/* gallery ends */
+
+
+/* footer starts */
+.footer{
+    background: var(--black);
+    text-align: center;
+}
+
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+
+.footer .share a{ 
+    height: 5rem;
+    width: 5rem; 
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: .3rem; 
+    border-radius: 50%;
+}
+
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+
+
+.footer .links a{
+    padding: 7rem 2rem;
+    color: white;
+    border: var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover{
+    background: var(--main-color);
+}
+
+
+
+.footer .credit{
+    font-size: 2rem;
+    color: white;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+}
+
+
+/* footer ends */
+
+
+
+    
+/* media querys starts*/
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+}
+
+@media(max-width:768px) {
+
+
+    .home{
+        background-image: url(poyadina2.jpg);
+    }
+
+
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: -100%;
+        background: rgb(255, 255, 255);
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        
+    } 
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+
+    .header .navbar a{ 
+        color: black;
+        text-align: center;
+        display: block; 
+        margin: 1.5rem;
+        padding: 3rem;
+        font-size: 2rem;
+    } 
+
+     
+    .header .search-form{ 
+        width: 90%;
+        right: 2rem;
+    } 
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    } 
+
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+
+}
+
+@media( max-width: 450px){
+
+    html{
+        font-size: 50%;
+    } 
+
+    .home{
+        background-image: url(poyadina2.jpg);
+    }
+}
+/* media querys ends */
