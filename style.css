@@ -529,10 +529,12 @@ section{
 
     .home{
         background-image: url(ph/poyadina2.jpg);
+        font-color: #fff;
     }
 }
 
 /* media querys ends */
+
 
 
 
